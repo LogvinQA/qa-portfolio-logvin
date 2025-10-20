@@ -1,0 +1,56 @@
+{
+  "info": {
+    "name": "Petstore QA Demo",
+    "_postman_id": "demo-collection-id",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Pet",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/pet",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pet"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"id\": 999001, \"name\": \"RasulDog\", \"status\": \"available\"}"
+        }
+      }
+    },
+    {
+      "name": "Get Pet",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/pet/999001",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "pet",
+            "999001"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://petstore.swagger.io/v2"
+    }
+  ]
+}
