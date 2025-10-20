@@ -55,14 +55,18 @@
 | **PUT** | Обновление данных поста | ✅ |
 | **DELETE** | Удаление поста | ✅ |
 
-### 📸 Скриншоты API-тестов Postman
+## 📸 Скриншоты API-тестов Postman
 
 | Метод | Скриншот |
 |--------|-----------|
-| GET | ![GET test](./screenshots/postman/get_test_1.png) |
-| POST | ![POST test](./screenshots/postman/get_test_2.png) |
-| PUT | ![PUT test](./screenshots/postman/get_test_3.png) |
-| DELETE | ![DELETE test](./screenshots/postman/get_test_4.png) |
+| **GET** | ![GET test](./screenshots/postman/get_test_1.png) |
+| **POST** | ![POST test](./screenshots/postman/get_test_2.png) |
+| **PUT** | ![PUT test](./screenshots/postman/get_test_3.png) |
+| **DELETE** | ![DELETE test](./screenshots/postman/get_test_4.png) |
+
+> Каждый тест проверяет корректность структуры, статус-коды и формат ответа (JSON).  
+> Тесты выполнены в Postman, с использованием встроенного JavaScript-валидационного движка.
+
 
 
 ---
