@@ -48,7 +48,7 @@
 
 | Инструмент | Скриншот |
 |-------------|-----------|
-| **Jira (Kanban board)** | ![Jira board](./screenshots/jira.png) |
+| **Jira (Kanban board)** | ![Jira board](./screenshots/jira_.png) |
 
 > Скриншот показывает процесс тестирования и баг-трекинг в Jira.  
 > Каждый баг оформлен с приоритетом, тегами и статусом.
