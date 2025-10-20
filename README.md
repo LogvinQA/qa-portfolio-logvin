@@ -94,4 +94,4 @@
 ## 👤 Автор
 
 **Расул Логвин**  
-📬 Контакты: [Telegram](https://t.me/pando_s)
+📬[- Telegram: **[@pando_s](https://t.me/pando_s)**
