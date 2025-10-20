@@ -57,16 +57,16 @@
 
 ### Скриншоты тестов
 GET:
-![GET test](screenshots/postman/Снимок%20экрана%202025-10-20%20в%2017.14.06.png)
+![GET test](screenshots/postman/get%20test%202025-10-20%20в%2017.14.06.png)
 
 POST:
-![POST test](screenshots/postman/Снимок%20экрана%202025-10-20%20в%2017.29.33.png)
+![POST test](screenshots/postman/get%20test%202025-10-20%20в%2017.29.33.png)
 
 PUT:
-![PUT test](screenshots/postman/Снимок%20экрана%202025-10-20%20в%2017.30.39.png)
+![PUT test](screenshots/postman/get%20test%202025-10-20%20в%2017.30.39.png)
 
 DELETE:
-![DELETE test](screenshots/postman/Снимок%20экрана%202025-10-20%20в%2017.31.43.png)
+![DELETE test](screenshots/postman/get%20test%202025-10-20%20в%2017.31.43.png)
 
 ---
 
