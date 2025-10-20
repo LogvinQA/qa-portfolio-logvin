@@ -60,10 +60,11 @@
 
 | Метод | Скриншот |
 |--------|-----------|
-| GET | ![GET test](screenshots/postman/get_test_1.png) |
-| POST | ![POST test](screenshots/postman/get_test_2.png) |
-| PUT | ![PUT test](screenshots/postman/get_test_3.png) |
-| DELETE | ![DELETE test](screenshots/postman/get_test_4.png) |
+![GET test](./screenshots/postman/get_test_1.png)
+![POST test](./screenshots/postman/get_test_2.png)
+![PUT test](./screenshots/postman/get_test_3.png)
+![DELETE test](./screenshots/postman/get_test_4.png)
+ |
 
 ---
 
