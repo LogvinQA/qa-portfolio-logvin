@@ -24,8 +24,9 @@ jobs:
           npm install -g newman
           npm install -g newman-reporter-html
 
-      - name: Run Postman collection via Newman
+            - name: Run Postman collection via Newman
         run: |
+          mkdir -p screenshots
           newman run postman/saucedemo_collection.json \
             --environment environment.json \
             --reporters cli,html \
