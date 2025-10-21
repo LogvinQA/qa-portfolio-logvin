@@ -1,10 +1,9 @@
 name: Run API Tests with Newman
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
+  push:
+    branches: [ main ]
 
 jobs:
   api-tests:
@@ -19,22 +18,23 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Install Newman and HTML Reporter
+      - name: Install Newman and HTML reporter
         run: |
           npm install -g newman
           npm install -g newman-reporter-html
 
-            - name: Run Postman collection via Newman
+      - name: Prepare screenshots dir
+        run: mkdir -p screenshots
+
+      - name: Run Postman collection via Newman
         run: |
-          mkdir -p screenshots
           newman run postman/saucedemo_collection.json \
             --environment environment.json \
             --reporters cli,html \
             --reporter-html-export screenshots/newman_report_example.html
 
-      - name: Upload HTML report as artifact
+      - name: Upload HTML report
         uses: actions/upload-artifact@v4
-        if: always()
         with:
           name: newman-html-report
           path: screenshots/newman_report_example.html
