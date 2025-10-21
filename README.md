@@ -12,7 +12,8 @@
 
 **Quick links:** 
 [📘 Test cases (XLSX)](docs/test-cases.xlsx) · 
-[🧪 Postman collection](postman/saucedemo_collection.json) · 
+[🧪 Postman collection](postman/saucedemo_collection.json)
+[⚙️ Environment](postman/environment.json)· 
 [📸 Jira board (screenshot)](screenshots/jira_board.png) · 
 [📸 Test cases (screenshot)](screenshots/google_sheets.png)
 ## 📁 Состав репозитория
