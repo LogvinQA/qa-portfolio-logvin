@@ -101,12 +101,19 @@ Newman — это CLI-инструмент для автоматического
 ```bash
 npm install -g newman
 
+### 🚀 Запуск коллекции
+```bash
+newman run postman/saucedemo_collection.json \
+  --environment postman/environment.json \
+  --reporters cli,html \
+  --reporter-html-export reports/postman-report.html
 
 ## 💼 Цель
 Позиция: QA Trainee / Junior QA Engineer  
 Открыт к стажировкам и коммерческим проектам в web / API тестировании.
 
 ---
+
 
 ## 👤 Автор
 
