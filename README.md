@@ -1,3 +1,5 @@
+[![Run API Tests with Newman](https://github.com/LogvinQA/qa-portfolio-logvin/actions/workflows/newman.yml/badge.svg)](https://github.com/LogvinQA/qa-portfolio-logvin/actions/workflows/newman.yml)
+
 # 🧠 QA Portfolio — Расул Логвин
 
 ### 👋 Привет!
