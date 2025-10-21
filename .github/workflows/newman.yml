@@ -23,7 +23,7 @@ jobs:
           npm install -g newman
           npm install -g newman-reporter-html
 
-      - name: Prepare screenshots dir
+      - name: Create screenshots directory
         run: mkdir -p screenshots
 
       - name: Run Postman collection via Newman
@@ -34,6 +34,7 @@ jobs:
             --reporter-html-export screenshots/newman_report_example.html
 
       - name: Upload HTML report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: newman-html-report
