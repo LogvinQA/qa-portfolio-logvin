@@ -23,23 +23,33 @@ jobs:
           npm install -g newman
           npm install -g newman-reporter-html
 
-      # 1) Гарантируем, что есть папка для отчёта
       - name: Create screenshots directory
-        run: mkdir -p screenshots
+        run: mkdir -p ./screenshots
 
-      # 2) Запускаем коллекцию и НЕ падаем, чтобы отчет гарантированно создался
       - name: Run Postman collection via Newman
+        # важное:  --suppress-exit-code 0  и явный ./ в пути экспорта
         run: |
           newman run postman/saucedemo_collection.json \
             --environment environment.json \
             --reporters cli,html \
-            --reporter-html-export screenshots/newman_report_example.html \
-            --suppress-exit-code 1
+            --reporter-html-export ./screenshots/newman_report_example.html \
+            --suppress-exit-code 0
 
-      # 3) Всегда загружаем HTML-отчет, даже если ассерты упали
+      - name: Show working dir and files (debug)
+        run: |
+          echo "PWD = $(pwd)"
+          ls -la
+          ls -la ./screenshots || true
+          if [ -f ./screenshots/newman_report_example.html ]; then
+            echo "HTML report created ✅"
+          else
+            echo "HTML report NOT found ❌"
+          fi
+
       - name: Upload HTML report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: newman-html-report
-          path: screenshots/newman_report_example.html
+          path: ./screenshots/newman_report_example.html
+          if-no-files-found: warn
