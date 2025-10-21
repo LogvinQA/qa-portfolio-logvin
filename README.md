@@ -74,16 +74,19 @@
 Newman — это CLI-инструмент для автоматического запуска Postman-коллекций.  
 Он позволяет получать отчёты о результатах прямо из терминала и формировать HTML-файлы для визуализации.
 
----
-
 ### 💾 Установка
+
 ```bash
 npm install -g newman
 npm install -g newman-reporter-html
 ```
+### 🚀 Запуск коллекции
+
+```bash
 newman run postman/saucedemo_collection.json \
 --reporters cli,html \
 --reporter-html-export screenshots/newman_report_example.html
+```
 
 ## 📊 Пример HTML-отчёта Newman
 
