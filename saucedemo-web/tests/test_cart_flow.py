@@ -1,6 +1,7 @@
 import pytest
-from pages.login_page import LoginPage
-from pages.inventory_page import InventoryPage
+from .pages.login_page import LoginPage
+from .pages.inventory_page import InventoryPage
+
 
 @pytest.mark.ui
 def test_add_to_cart_and_checkout_visible(page):
