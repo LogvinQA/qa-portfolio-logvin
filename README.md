@@ -117,6 +117,7 @@ Python · Pytest · Playwright · pytest-html
 ```bash
 pip install -r requirements.txt
 python3 -m playwright install --with-deps
+```
 pytest -m ui
 ```
 ---
