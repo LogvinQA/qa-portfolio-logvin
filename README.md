@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-003B57?logo=postgresql&logoColor=white)
+
+
 [![Run API Tests with Newman](https://github.com/LogvinQA/qa-portfolio-logvin/actions/workflows/newman.yml/badge.svg)](https://github.com/LogvinQA/qa-portfolio-logvin/actions/workflows/newman.yml)
 
 # 🧠 QA Portfolio — Расул Логвин
